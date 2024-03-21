@@ -1,33 +1,3 @@
-// // Get a reference to the image element
-// const image = document.getElementById('spinImage');
- 
-// // Rotate the image randomly every 100 milliseconds
-// const rotationInterval = setInterval(() => {
-//   const randomRotation = Math.floor(Math.random() * 360); // Generate a random angle between 0 and 360 degrees
-//   image.style.transform = `rotate(${randomRotation}deg)`; // Apply the rotation to the image
-// }, 100);
- 
-// // Stop the rotation when the image is at a certain position (e.g., at 90 degrees)
-// const stopRotation = () => {
-//   clearInterval(rotationInterval); // Stop the rotation interval
-// //   image.style.transform = 'rotate(90deg)'; // Set the image rotation to the desired position
-//   const computedStyle = window.getComputedStyle(image);
- 
-// // Extract the rotation angle from the computed style
-// const transform = computedStyle.getPropertyValue('transform');
-// let rotationAngle = 0;
-//   if (transform && transform !== 'none') {
-//   // Extract the rotation angle from the transform matrix
-//   const matrix = transform.split('(')[1].split(')')[0].split(',');
-//   const a = matrix[0];
-//   const b = matrix[1];
-//   rotationAngle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
-// }
- 
-// console.log('Rotation angle:', rotationAngle);
- 
-// };
-
 const image = document.getElementById("spinImage");
 const toggleButton = document.getElementById("toggleButton");
 let rotationInterval = null;
